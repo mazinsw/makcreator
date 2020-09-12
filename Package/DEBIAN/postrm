@@ -1,0 +1,26 @@
+#!/bin/sh
+
+set -e
+
+uninstall_icon()
+{
+    gtk-update-icon-cache -f -t -q /usr/share/icons/hicolor/
+}
+
+uninstall_mime()
+{
+    update-mime-database /usr/share/mime/
+}
+
+case "$1" in
+    purge|remove|upgrade)
+        uninstall_icon
+        uninstall_mime
+    ;;
+
+    failed-upgrade|abort-install|abort-upgrade|disappear)
+    ;;
+
+    *)
+        exit 0
+esac

@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=1.0
+Name=Makefile Creator
+Name[pt]=Makefile Creator
+Name[pt_BR]=Makefile Creator
+Comment=Cria facilmente um arquivo makefile
+Comment[pt]=Cria facilmente um arquivo makefile
+Comment[pt_BR]=Cria facilmente um arquivo makefile
+GenericName=Criador de arquivo makefile
+GenericName[pt]=Criador de arquivo makefile
+GenericName[pt_BR]=Criador de arquivo makefile
+Exec=makcreator
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=makcreator
+Categories=Application;GTK;Development;Building;
+MimeType=text/plain;
+StartupNotify=true

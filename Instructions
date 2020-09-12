@@ -1,0 +1,8 @@
+install gtk+ 2.0:
+apt-get install libgtk2.0-dev
+
+to copile:
+gcc -Wall -o makcreator makcreator.c utils.c `pkg-config --libs --cflags gtk+-2.0`
+
+file main is makcreator.c, this program don't is complete you can help.. send a e-mail to
+mazin.z@hotmail.com with suggestions

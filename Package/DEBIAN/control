@@ -1,0 +1,8 @@
+Package: makefile-creator
+Priority: optional
+Version: 1.0.2.0
+Architecture: i386
+Maintainer: mazin sw
+Depends: libgtk2.0-common
+Description: Cria facilmante arquivos makefile.
+Installed-Size: 113

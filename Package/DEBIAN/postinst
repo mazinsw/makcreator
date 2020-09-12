@@ -1,0 +1,27 @@
+#!/bin/sh
+set -e
+
+install_icon()
+{
+    gtk-update-icon-cache -f -t -q /usr/share/icons/hicolor/
+}
+
+install_mime()
+{
+    update-mime-database /usr/share/mime/
+}
+
+case "$1" in
+    configure)
+        install_mime
+        install_icon
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+    *)
+        exit 0
+    ;;
+esac
+
